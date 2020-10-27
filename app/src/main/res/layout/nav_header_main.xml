@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#2f8bed"
+android:gravity="bottom"
+android:orientation="vertical"
+android:paddingLeft="16dp"
+android:paddingTop="16dp"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingBottom="16dp"
+android:theme="@style/ThemeOverlay.AppCompat.Dark">
+<com.mikhaellopez.circularimageview.CircularImageView
+    android:id="@+id/nav_user_image"
+    android:layout_width="110dp"
+    android:layout_height="110dp"
+    android:layout_marginTop="32dp"
+    android:adjustViewBounds="true"
+    app:civ_border_color="#6399d5"
+    app:civ_border_width="3dp"
+    app:civ_shadow="true"
+    app:civ_shadow_radius="2dp"
+    app:civ_shadow_color="#3f51b5"
+    android:contentDescription="@string/nav_header_desc"
+    android:paddingTop="@dimen/nav_header_vertical_spacing"
+    app:srcCompat="@drawable/logo"/>
+
+
+<TextView
+    android:id="@+id/nav_user_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/nav_header_vertical_spacing"
+    android:text="@string/nav_header_title"
+    android:textSize="14sp"
+    android:fontFamily="sans-serif"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+<TextView
+    android:id="@+id/nav_user_profile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:text="Ajouter votre compte" />
+
+</LinearLayout>

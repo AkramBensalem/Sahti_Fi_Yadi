@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_log_in"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_round_account_circle_24"
+        android:iconTint="@android:color/white"
+        android:title="@string/title_activity_login"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+    <item
+        android:id="@+id/action_log_out"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        android:iconTint="@android:color/white"
+        android:title="Sign out"
+        app:showAsAction="ifRoom"
+        />
+</menu>

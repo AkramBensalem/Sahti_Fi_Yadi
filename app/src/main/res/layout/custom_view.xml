@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/corner"
+    android:backgroundTint="@android:color/white"
+    tools:context=".MainActivity"
+    >
+   <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+       android:layout_margin="16dp"
+       android:background="@drawable/corner"
+       android:backgroundTint="@android:color/white">
+
+      <ImageView
+          android:id="@+id/cancel_button"
+          android:layout_width="200dp"
+          android:layout_height="140dp"
+          android:layout_marginTop="8dp"
+          android:backgroundTint="@android:color/white"
+          android:src="@drawable/welcome"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="24dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginBottom="16dp"
+          android:fontFamily="sans-serif-light"
+          android:gravity="center"
+          android:text="Comme vous utilisez cette application pour la première fois.\n Vous deverez attender quelques instances jusqu'à la finalisation de la processedure de la initialisation."
+          android:textSize="16sp"
+          app:layout_constraintBottom_toTopOf="@+id/buttonOk"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/cancel_button" />
+
+
+      <Button
+          android:id="@+id/buttonOk"
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginStart="16dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginBottom="16dp"
+          android:background="@drawable/button_corner_yes"
+          android:text="OK"
+          android:textColor="@color/colorPrimary"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView"
+          />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

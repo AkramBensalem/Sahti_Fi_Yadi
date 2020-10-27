@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corner"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:backgroundTint="@android:color/white"
+    >
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp"
+       android:background="@drawable/corner">
+
+      <ImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_baseline_wifi_off_24"
+          android:layout_gravity="center"
+          android:backgroundTint="@android:color/white"
+          android:layout_marginTop="16dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginBottom="24dp"/>
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginBottom="16dp"
+          android:fontFamily="sans-serif-black"
+          android:text="Il n'y a pas internet"
+          android:textSize="24sp"
+          android:gravity="center"/>
+
+
+
+   </LinearLayout>
+</FrameLayout>

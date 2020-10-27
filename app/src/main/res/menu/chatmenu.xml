@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_delete_message"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_baseline_delete_forever_24"
+        android:title="Supprimer le message"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_block"
+        android:orderInCategory="100"
+        android:title="Bloquer"
+        android:iconTint="@android:color/white"
+        android:icon="@drawable/ic_baseline_block_24"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".message.chatRoom.chatRoom"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_chat_room_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:listitem="@layout/chat_room_message_item" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        >
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="downlowd_image"
+            android:src="@drawable/photocamera"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@android:color/transparent"/>
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/edit_text_envoyer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Écrire votre message"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_corner"
+        android:padding="8dp"
+        />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/envoyer_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="Envoyer"
+            android:src="@drawable/ic_round_send_24"
+            android:tint="@android:color/white"
+            android:backgroundTint="@color/colorAccent"
+            app:fabSize="mini"
+            />
+    </LinearLayout>
+</LinearLayout>

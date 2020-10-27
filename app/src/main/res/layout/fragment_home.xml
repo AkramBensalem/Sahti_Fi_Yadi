@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    tools:context=".ui.home.HomeFragment"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"/>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/doctor"
+                style="@style/MainActivityButtonBackGround"
+                />
+            <Button
+                android:id="@+id/hospital"
+                style="@style/MainActivityButtonBackGround"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp">
+            <Button
+                android:id="@+id/labo"
+                style="@style/MainActivityButtonBackGround"
+                />
+            <Button
+                android:id="@+id/pharmacy"
+                style="@style/MainActivityButtonBackGround"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--
+    </LinearLayout>
+
+<Button
+    android:id="@+id/message_add_user"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:text="add user"
+    android:onClick="addUser"
+    android:visibility="gone"
+    />
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/message_button_intent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_margin="16dp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:text="message"
+    android:src="@drawable/ic_message_black_24dp"
+    android:tint="@android:color/white"
+    android:backgroundTint="#F80303"
+    android:visibility="visible"
+    android:onClick="message"
+    android:layout_alignParentRight="true" />
+    -->

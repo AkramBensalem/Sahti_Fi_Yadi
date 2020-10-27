@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/details_profil_tabs_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_normal_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Salut Akram"
+                android:textColor="#B4111B30"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/add_completer_votre_compte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Complétez votre compte"
+                android:textColor="#B4111B30"
+                android:textSize="24sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="80dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/add_normal_user_image"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="#92A0E4DF"
+                    app:civ_border_width="2dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#92A0E4DF"
+                    app:civ_shadow_radius="1dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="L'addresse:"
+                android:textColor="@color/blackblue"
+                android:textSize="18sp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_person_pin_circle_24"
+                android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
+                android:drawableTint="@color/colorAccent"
+                android:drawablePadding="8dp"
+                android:hint="Votre Quartier"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_corners_blue"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/add_spinner_wilaya"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_corner"
+                    android:entries="@array/wilaya"
+                    android:spinnerMode="dropdown" />
+
+                <Spinner
+                    android:id="@+id/add_spinner_communs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_corner"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="L'age :"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/minis_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:src="@drawable/ic_baseline_indeterminate_check_box_24"
+                    android:tint="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/add_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_corner"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="2dp"
+                    android:singleLine="true"
+                    android:text="20"
+                    android:textSize="24sp" />
+
+                <ImageButton
+                    android:id="@+id/plus_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:src="@drawable/ic_baseline_add_box_24"
+                    android:tint="@android:color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/blackblue"
+                android:text="Veulez vous s'inscrire comme:" />
+
+            <RadioGroup
+                android:id="@+id/add_fragment_radio_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/add_fragment_radiobottongroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/add_normal_user"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Rien" />
+
+                    <RadioButton
+                        android:id="@+id/add_medcin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Médcin" />
+
+                    <RadioButton
+                        android:id="@+id/add_pharmacie"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="pharmacie" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/add_fragment_radiobottongroup_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/add_hopital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:text="Hopital" />
+
+                    <RadioButton
+                        android:id="@+id/add_labo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Laboatoire" />
+                </RadioGroup>
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/add_donnateur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:layout_marginTop="32dp"
+                android:buttonTint="@color/red"
+                android:fontFamily="sans-serif-medium"
+                android:text="Veillez ajouter votre compte comme Donateur"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/blooddonor_fragment_radiobottongroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/blooddonor_o"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="O"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:id="@+id/blooddonor_a"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    />
+                <RadioButton
+                    android:id="@+id/blooddonor_b"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+
+                    />
+                <RadioButton
+                    android:id="@+id/blooddonor_ab"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="AB"
+                    android:checked="false"
+
+                    />
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/blooddonor_fragment_radiobottongroup_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/blooddonor_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:checked="true"
+                    android:layout_marginRight="64dp"
+                    />
+                <RadioButton
+                    android:id="@+id/blooddonor_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_marginLeft="64dp"
+
+                    />
+            </RadioGroup>
+
+
+            <ProgressBar
+                android:id="@+id/progress_b"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        android:layout_gravity="right"
+        android:gravity="center"
+android:background="@drawable/button_corner_round"        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>

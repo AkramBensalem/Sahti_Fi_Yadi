@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/donateur_image"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile">
+    </com.mikhaellopez.circularimageview.CircularImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <ImageButton
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:tint="#E2DD2525"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_round_account_circle_24">
+            </ImageButton>
+            <EditText
+                 android:layout_width="fill_parent"
+                 android:id="@+id/fullname"
+                 android:layout_height="wrap_content"
+                 android:hint="Nom et Prénom"
+                android:padding="8dp"
+                android:background="@drawable/corners"
+               />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+
+            <ImageButton
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:tint="#E2DD2525"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_person_pin_circle_24">
+            </ImageButton>
+            <EditText
+                android:layout_width="fill_parent"
+                android:id="@+id/location_d"
+                android:layout_height="wrap_content"
+                android:hint="Quartier"
+                android:padding="8dp"
+                android:background="@drawable/corners"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_wilaya"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_corner_red"
+            android:spinnerMode="dropdown"
+            android:layout_marginRight="8dp"
+            android:entries="@array/wilaya"/>
+
+        <Spinner
+            android:id="@+id/spinner_communs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/button_corner_red"
+            android:spinnerMode="dropdown"
+            android:visibility="visible" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="l'age :"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="#E2DD2525"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="24dp"
+                />
+            <ImageButton
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_indeterminate_check_box_24"
+                android:backgroundTint="#E2DD2525"
+                android:tint="@android:color/white"
+                android:id="@+id/minis"
+                />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_but"
+                android:inputType="numberDecimal"
+                android:paddingLeft="8dp"
+                android:paddingTop="2dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:text="20"
+                android:textSize="26sp"
+                />
+            <ImageButton
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_add_box_24"
+                android:backgroundTint="#E2DD2525"
+                android:tint="@android:color/white"
+                android:id="@+id/plus"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <ImageButton
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:tint="#E2DD2525"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_local_phone_24">
+            </ImageButton>
+            <EditText
+                android:layout_width="fill_parent"
+                android:id="@+id/phone_d"
+                android:inputType="phone"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:padding="8dp"
+                android:background="@drawable/corners"
+                />
+        </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/blooddonor_fragment_radiobottongroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/blooddonor_o"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:checked="true"
+            android:buttonTint="#E2DD2525"
+
+            />
+        <RadioButton
+            android:id="@+id/blooddonor_a"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="A"
+             android:buttonTint="#E2DD2525"
+            />
+        <RadioButton
+            android:id="@+id/blooddonor_b"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:buttonTint="#E2DD2525"
+
+            />
+        <RadioButton
+            android:id="@+id/blooddonor_ab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="AB"
+            android:checked="false"
+            android:buttonTint="#E2DD2525"
+
+
+            />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/blooddonor_fragment_radiobottongroup_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/blooddonor_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:checked="true"
+            android:layout_marginRight="64dp"
+            android:buttonTint="#E2DD2525"
+            />
+        <RadioButton
+            android:id="@+id/blooddonor_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginLeft="64dp"
+            android:buttonTint="#E2DD2525"
+
+            />
+    </RadioGroup>
+    <ProgressBar
+        android:id="@+id/progress_bardo"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/adddonateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="74dp"
+        android:background="@drawable/buttun"
+        android:gravity="center"
+        android:text="Mise à jour"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+</LinearLayout>

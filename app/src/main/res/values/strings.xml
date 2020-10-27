@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Sahti Fi Yadi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <!-- c'est pour les mdcins-->
+
+
+    <string-array name="doctor_specialistes">
+        <item>Cardiologue</item>
+        <item>Gynécologue</item>
+        <item>Radiologie </item>
+        <item>Dentiste</item>
+        <item>Diabétologue</item>
+        <item>Neurologue</item>
+        <item>Ophtalmologue</item>
+        <item>Borthopédiste</item>
+    </string-array>
+
+
+    <string name="nav_header_title">Sahti Fi Yedi</string>
+    <string name="nav_header_subtitle">sahti.fiydi@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Paramétre</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="contact_nous">Contactez-nous</string>
+    <string name="partager">Partager</string>
+    <string name="a_prpos_de_nous">A propos de nous</string>
+    <string name="don_de_sang">Don de Sang</string>
+    <string name="sahti_fi_yedi">Sahti fi yedi</string>
+
+
+    <string-array name="horraire">
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+
+    </string-array>
+    <string name="title_activity_login">Se connecter</string>
+    <string name="prompt_email">Addresse E-mail</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in_short">Se connecter</string>
+    <string name="log_in">log in</string>
+    <string name="add_your_etablissement">Add your etablissement</string>
+    <string name="profile">Profile</string>
+    <string name="messages">Messages</string>
+    <string name="or">Or</string>
+    <string name="return_to_mainpage">Return to MainPage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="compte_sahti_fi_yedi">Compte Sahti Fi Yedi</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- compte Preferences -->
+    <string name="sauvgarder">Sauvgarder mes données</string>
+    <string name="sauvgarder_on">Vous donnés sont sauvgarder en mode offline</string>
+    <string name="sauvgarder_off">Vous risquez de perdre tout les informations sur vous en cas de coupure internet </string>
+
+
+    <!-- Gestion Preferences -->
+    <string name="gestion_globale">Gestion globale</string>
+    <string name="langue">Langue</string>
+    <string name="localisation">Localisation</string>
+
+    <string name="localisation_gps_autoriser">Vous autorisez la détection de votre emplacement via le GPS</string>
+    <string name="localisation_gps_non_autoriser">Vous n\'autorisez pas la détection de votre emplacement via le GPS</string>
+
+
+    <!-- langues Preferences -->
+    <string name="arabe">Arabe</string>
+    <string name="french">Français</string>
+    <string name="english">English</string>
+
+
+    <!-- GPS Preferences -->
+    <string name="non_autoriser">Activer</string>
+    <string name="autoriser">Désactiver</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Mise à jour du données</string>
+    <string name="attachment_title">Mode de téléchargement</string>
+    <string name="attachment_summary_on">Téléchargez uniquement par Wifi</string>
+    <string name="attachment_summary_off">Téléchargez automatiquement les mises à jour lorsque vous etes connecté à un réseau Wi-Fi ou bien les réseaux mobiles</string>
+    <string name="pr_prenom">Prénom</string>
+    <string name="nom">Nom</string>
+
+    <string name="title_activity_details_doctor">DetailsDoctorActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_add_utilisateur">Ajouter votre compte</string>
+    <string name="contactez_nous_title">Nous sommes toujours heureux de vous-écouter</string>
+    <string name="contactez_nous_subtitle">Nous vous enverrons la réponse à votre e-mail dès que possible</string>
+    <string name="contactez_nous_email_hint">Votre e-mail</string>
+    <string name="contactez_nous_email_message_hint">Ecrire votre message ici</string>
+    <string name="contactez_nous_email_subject_hint">Le sujet</string>
+    <string name="contactez_nous_button_text">Envoyer le message</string>
+    <string name="action_sign_in">Se connecter</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_hopital_activitytwo">hopitalActivitytwo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

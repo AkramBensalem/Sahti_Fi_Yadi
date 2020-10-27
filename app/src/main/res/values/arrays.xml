@@ -1,0 +1,176 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="langues_entries">
+        <item>arabe</item>
+        <item>french</item>
+        <item>english</item>
+
+    </string-array>
+
+    <string-array name="langues_values">
+        <item>العربية</item>
+        <item>Français</item>
+        <item>English</item>
+    </string-array>
+
+
+    <string-array name="wilaya">
+        <item>Wilaya</item>
+        <item>ADRAR</item>
+        <item>CHLEF</item>
+        <item>LAGHOUAT</item>
+        <item>OUM EL BOUAGHI</item>
+        <item>BATNA</item>
+        <item>BEJAIA</item>
+        <item>BISKRA</item>
+        <item>BECHAR</item>
+        <item>BLIDA</item>
+        <item>BOUIRA</item>
+        <item>TAMANRASSET</item>
+        <item>TEBESSA</item>
+        <item>TLEMCEN</item>
+        <item>TIARET</item>
+        <item>TIZI-OUZOU</item>
+        <item>ALGER</item>
+        <item>DJELFA</item>
+        <item>JIJEL</item>
+        <item>SETIF</item>
+        <item>SAIDA</item>
+        <item>SKIKDA</item>
+        <item>SIDI BEL ABBES</item>
+        <item>ANNABA</item>
+        <item>GUELMA</item>
+        <item>CONSTANTINE</item>
+        <item>MEDEA</item>
+        <item>MOSTAGANEM</item>
+        <item>MSILA</item>
+        <item>MASCARA</item>
+        <item>OUARGLA</item>
+        <item>ORAN</item>
+        <item>EL BAYADH</item>
+        <item>ILLIZI</item>
+        <item>BORDJ BOU ARRERIDJ</item>
+        <item>BOUMERDES</item>
+        <item>EL TAREF</item>
+        <item>TINDOUF</item>
+        <item>TISSEMSILT</item>
+        <item>EL OUED</item>
+        <item>KHENCHeLA</item>
+        <item>SOUK AHRAS</item>
+        <item>TIPAZA</item>
+        <item>MILA</item>
+        <item>AIN DEFLA</item>
+        <item>NAAMA</item>
+        <item>AIN TEMOUCHENT</item>
+        <item>GHARDAIA</item>
+        <item>RELIZANE</item>
+    </string-array>
+
+    <string-array name="speciality">
+        <item>Acupuncture</item>
+        <item>Allergologue</item>
+        <item>Anatomie et cytologie pathologique</item>
+        <item>Cardiologue</item>
+        <item>Chirurgien Cardiaque</item>
+        <item>Chirurgien dentiste</item>
+        <item>Chirurgien général</item>
+        <item>Chirurgien Maxillo-facial</item>
+        <item>Chirurgien Plastique</item>
+        <item>Chirurgien Urologue</item>
+        <item>Chirurgien vasculaire</item>
+        <item>Chirurgie pédiatrique</item>
+        <item>Dermatologue</item>
+        <item>Diabétologue</item>
+        <item>Endocrinologue</item>
+        <item>Endodontiste</item>
+        <item>Epidemiologiste</item>
+        <item>Gastrologue</item>
+        <item>Gynécologue</item>
+        <item>Hématologue</item>
+        <item>Histologiste</item>
+        <item>Implantologiste</item>
+        <item>Médecin biologiste</item>
+        <item>Médecin du sport</item>
+        <item>Médecin du travail</item>
+        <item>Médecin esthétique</item>
+        <item>Médecin généraliste</item>
+        <item>Médecin Infectiologue</item>
+        <item>Médecin interniste</item>
+        <item>Médecin légiste</item>
+        <item>Médecin Radiologue</item>
+        <item>Médecin réanimateur</item>
+        <item>Médecin rééducateur</item>
+        <item>Microbiologiste</item>
+        <item>Nephrologue</item>
+        <item>Neurochirurgien</item>
+        <item>Neurologue</item>
+        <item>Occlusodontiste</item>
+        <item>Oncologue</item>
+        <item>Ophtalmologue</item>
+        <item>ORL</item>
+        <item>Orthodontiste</item>
+        <item>Orthopédiste</item>
+        <item>Parodontologiste</item>
+        <item>Pediatre</item>
+        <item>Pneumo-Phtisiologue</item>
+        <item>Psychiatre</item>
+        <item>Radiologue</item>
+        <item>Rhumatologue</item>
+        <item>Toxicologue</item>
+        <item>Urologue</item>
+    </string-array>
+	
+	<array name="speciality_images">
+<item>@drawable/acupuncture</item>
+<item>@drawable/allergist</item>
+<item>@drawable/anatomy</item>
+<item>@drawable/cardiologue</item>
+<item>@drawable/cardiac</item>
+<item>@drawable/dentist</item>
+<item>@drawable/churgin</item>
+<item>@drawable/maxillofacial</item>
+<item>@drawable/plastic</item>
+<item>@drawable/urlogist</item>
+<item>@drawable/vusculare</item>
+<item>@drawable/pediatrics</item>
+<item>@drawable/dermatologist</item>
+<item>@drawable/diabetic</item>
+<item>@drawable/endocrinologist</item>
+<item>@drawable/endodontiste</item>
+<item>@drawable/epedim</item>
+<item>@drawable/gastrologue</item>
+<item>@drawable/gynecologist</item>
+<item>@drawable/hematologist</item>
+<item>@drawable/histologiste</item>
+<item>@drawable/implantology</item>
+<item>@drawable/biologist</item>
+<item>@drawable/sport</item>
+<item>@drawable/travail</item>
+<item>@drawable/esthetique</item>
+<item>@drawable/generalist</item>
+<item>@drawable/infectiologue</item>
+<item>@drawable/internist</item>
+<item>@drawable/legiste</item>
+<item>@drawable/radiologue</item>
+<item>@drawable/reanimateur</item>
+<item>@drawable/reeducateur</item>
+<item>@drawable/microbiologiste</item>
+<item>@drawable/nephrologist</item>
+<item>@drawable/neurosurgeon</item>
+<item>@drawable/neurologue</item>
+<item>@drawable/occlusodontiste</item>
+<item>@drawable/oncologist</item>
+<item>@drawable/ophtalmologist</item>
+<item>@drawable/orl</item>
+<item>@drawable/orthodontiste</item>
+<item>@drawable/orthopediste</item>
+<item>@drawable/periodontist</item>
+<item>@drawable/pediatricstwo</item>
+<item>@drawable/pneumo</item>
+<item>@drawable/psychiatre</item>
+<item>@drawable/radiologuetwo</item>
+<item>@drawable/rhumatologue</item>
+<item>@drawable/toxicologist</item>
+<item>@drawable/urologue</item>
+</array>
+</resources>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_resonal_information_doctor_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:id="@+id/fragment_details_doctor_specialist_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/fragment_details_doctor_specialist_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#FFFFFF"
+                android:elevation="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_round_assignment_24"
+                android:tint="#FF5722"
+                app:maxImageSize="30dp"
+                app:pressedTranslationZ="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spécialité"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#353434"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/fragment_details_doctor_specialist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cardiologue"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="16sp"
+                    android:transitionName="SPECIALITE"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_details_doctor_type_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/fragment_details_doctor_type_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|start"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_round_domain_24"
+            android:tint="#9C27B0"
+            app:maxImageSize="30dp"
+            app:pressedTranslationZ="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#353434"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fragment_details_type_specialist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privé"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="16sp"
+                android:transitionName="SPECIALITE"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_details_doctor_service_linearlayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/fragment_details_doctor_service_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="top|start"
+                android:backgroundTint="#FFFFFF"
+                android:elevation="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_round_room_service_24"
+                android:tint="#FFEB3B"
+                app:maxImageSize="30dp"
+                app:pressedTranslationZ="5dp"
+                android:onClick="callMe"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Services"
+                     android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#353434"/>
+
+                <TextView
+                    android:id="@+id/fragment_details_doctor_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Il n'y a aucun services"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="16sp"
+                    android:transitionName="SERVICES"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_details_doctor_ouverture_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/fragment_details_doctor_ouverture_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="top|start"
+                android:backgroundTint="#FFFFFF"
+                android:elevation="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_round_access_time_24"
+                android:tint="#22FF8D"
+                app:maxImageSize="30dp"
+                app:pressedTranslationZ="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L'ouverture"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#353434"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/fragment_details_doctor_overture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08:00 - 16:00"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="16sp"
+                    android:transitionName="TIME"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageButton
+            android:id="@+id/details_doctor_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D6EDFF"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_local_phone_24"
+            android:tint="#FFEB3B"
+            app:pressedTranslationZ="5dp" />
+
+        <ImageButton
+            android:id="@+id/details_doctor_messsage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D6EDFF"
+            android:padding="8dp"
+            android:src="@drawable/ic_round_mail_outline_24"
+            android:tint="#FF0000"
+            app:pressedTranslationZ="5dp" />
+    </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:id="@+id/fragment_adress_doctor_first_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/fragment_adress_doctor_adrress_image_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="start|top"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/map"
+            app:maxImageSize="30dp"
+            app:pressedTranslationZ="5dp"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="L'Adresse"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:transitionName="ADRESS"
+                android:id="@+id/fragment_adress_doctor_adrress_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ain Ben Sultan, Médéa, Médéa" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fragment_adress_doctor_second_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/fragment_adress_doctor_distance_image_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/distance"
+            app:maxImageSize="30dp"
+            app:pressedTranslationZ="5dp"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:transitionName="ADRESS"
+                android:id="@+id/fragment_adress_doctor_distance_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5 km" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="1dp"
+        >
+
+        <fragment
+            android:id="@+id/fragment_adress_doctor_adrress_map"
+            android:name="com.gadg.sahtifiyadi.MapsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageButton
+            android:id="@+id/details_doctor_adress_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D6EDFF"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_local_phone_24"
+            android:tint="#FFEB3B"
+            app:pressedTranslationZ="5dp"
+            />
+
+        <ImageButton
+            android:id="@+id/details_adress_doctor_messsage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D6EDFF"
+            android:padding="8dp"
+            android:src="@drawable/ic_round_mail_outline_24"
+            android:tint="#FF0000"
+            app:pressedTranslationZ="5dp" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

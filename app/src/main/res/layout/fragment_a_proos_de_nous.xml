@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@drawable/logo_two"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sahti fi yadi "
+        android:textSize="30sp"
+        android:textColor="@color/blackblue"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"/>
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#404349"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sahti fi yadi est une application spécialisée dans le domaine de santé en Algérie crée par un groupe d’étudiants à l’ési."/>
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#404349"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sahti fi yadi est une application spécialisée dans le domaine de santé en Algérie crée par un groupe d’étudiants à l’ési."/>
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#404349"
+        android:fontFamily="sans-serif-medium"
+        android:text="De l’application on peut consulter les différents établissements de santé médecin, pharmacie, hôpital, clinique, laboratoire. On peut même consulter la liste des médicaments disponibles en Algérie, et on peut également faire le don du sang ou même avoir du sang si on a besoin."
+        />
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médecins :"
+android:fontFamily="sans-serif-black"
+            android:textColor="@color/blackblue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#404349"
+            android:text="                   On peut voir les informations du médecin (nom, prénom, âge, sexe, contacte, spécialité...) on a aussi accès à leur localisation, on peut faire la recherche par spécialité ou par distance (le plus proche) ou même par plusieurs critères et on peut contacter le médecin."
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pharmacies :"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/blackblue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#404349"
+            android:text="                      C’est pareil avec les médecins les informations, la localisation, la recherche, et en plus les horaires de travail, et pour savoir si le produit que je cherche et disponible on a simplement à le contacter."
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hôpital :"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/blackblue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#404349"
+            android:text=" Clinique et laboratoire : on peut voir quelques informations, la localisation, si c’est privé ou public et une petite description."
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médicaments :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/blackblue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#404349"
+            android:text="                           On peut voir les informations du médicament (la marque, la famille...) et on peut savoir s’il est disponible en Algérie."
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don du sang :"
+            android:textStyle="bold"
+            android:textColor="@color/blackblue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#404349"
+            android:text="                         Tu peux s’inscrire pour être un donneur (bénévole) et également tu peux avoir du sang (recherche une personne qui a le sang qui te convient)."
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#404349"
+            android:text="Chaque utilisateur peut créer un compte chaque médecin, pharmacie, ou directeur d’hôpital ou clinique ou laboratoire peut ajouter son établissement et chaque personne peut bénéficier de l’application même s’il n’est pas authentifié. Cette application a été créé par un groupe de 6 étudiants à l’école supérieur d’informatique à bel abbés suite au projet Pluridisciplinaire pour les étudiants de la 2CPI."
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créateurs :"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/blackblue"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Akram Bensalem" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Mehadji Anes" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Arbaoui Slimane " />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Raouf Andelatif" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Ilyes Belmiloud" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Hammadou Borhane El Din" />
+        </LinearLayout>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nous contacte:"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/facebook"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="Facebook :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sahti_Fi_yadi.officiel"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/twitter"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Twitter :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" @Sahti_Fi_Yadi.officiel"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/linkedin"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="LinkedIn :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" sahtifiyedi"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>

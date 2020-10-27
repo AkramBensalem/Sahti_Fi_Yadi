@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.gadg.sahtifiyadi.ui.home.HomeFragment"
+        android:label="@string/sahti_fi_yedi"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_don_de_sang"
+        android:name="com.gadg.sahtifiyadi.ui.don_de_sang.don_de_sangFragment"
+        android:label="@string/don_de_sang"
+        tools:layout="@layout/fragment_don_de_sang" />
+    <fragment
+        android:id="@+id/nav_medicament"
+        android:name="com.gadg.sahtifiyadi.ui.medicaments.MedicamentFragment"
+        android:label="Médécaments"
+        tools:layout="@layout/fragment_medicament" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.gadg.sahtifiyadi.ui.settings.SettingsFragment"
+        android:label="@string/action_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_a_propos_de_nous"
+        android:name="com.gadg.sahtifiyadi.ui.a_propos_de_nous.A_propos_de_nousFragment"
+        android:label="@string/a_prpos_de_nous"
+        tools:layout="@layout/fragment_a_proos_de_nous" />
+    <fragment
+        android:id="@+id/nav_partager"
+        android:name="com.gadg.sahtifiyadi.ui.partager.PartagerFragment"
+        android:label="@string/partager"
+        tools:layout="@layout/fragment_partager" />
+
+    <fragment
+        android:id="@+id/nav_contacter_nous"
+        android:name="com.gadg.sahtifiyadi.ui.contactez_nous.contactezNousFragment"
+        android:label="@string/contact_nous"
+        tools:layout="@layout/fragment_contactez_nous" />
+</navigation>

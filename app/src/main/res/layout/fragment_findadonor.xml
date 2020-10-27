@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.don_de_sang.findadonor">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_find_wilaya"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/button_corner_red"
+            android:spinnerMode="dropdown"
+            android:layout_marginRight="8dp"
+            android:entries="@array/wilaya"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_find_communs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/button_corner_red"
+            android:spinnerMode="dropdown"
+            android:visibility="visible" />
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/finddonor_fragment_radiobottongroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/blooddonor_o"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:checked="true"
+            android:buttonTint="#E2DD2525"
+
+            />
+        <RadioButton
+            android:id="@+id/blooddonor_a"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:buttonTint="#E2DD2525"
+            />
+        <RadioButton
+            android:id="@+id/blooddonor_b"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:buttonTint="#E2DD2525"
+
+            />
+        <RadioButton
+            android:id="@+id/blooddonor_ab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="AB"
+            android:checked="false"
+            android:buttonTint="#E2DD2525"
+
+
+            />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/finddonor_fragment_radiobottongroup_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/blooddonor_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:checked="true"
+            android:layout_marginRight="64dp"
+            android:buttonTint="#E2DD2525"
+            />
+        <RadioButton
+            android:id="@+id/blooddonor_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginLeft="64dp"
+            android:buttonTint="#E2DD2525"
+
+            />
+    </RadioGroup>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewd2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/donateur_item"/>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/contactez_nous_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/contactez_nous_title"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif-black"
+                android:textSize="26sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"/>
+
+            <TextView
+                android:id="@+id/contactez_nous_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contactez_nous_subtitle"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#404349"
+                android:layout_marginBottom="32dp"/>
+
+            <EditText
+                android:id="@+id/contactez_nous_email_edit"
+                style="@style/ContactezNousEditTexyStyle"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/contactez_nous_email_hint"
+                android:inputType="textEmailAddress"
+                 />
+
+            <EditText
+                android:id="@+id/contactez_nous_title_message_edit"
+                style="@style/ContactezNousEditTexyStyle"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_baseline_edit_24"
+				android:hint="@string/contactez_nous_email_subject_hint"
+                android:inputType="textEmailSubject"
+                />
+            <EditText
+                android:id="@+id/contactez_nous_message_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contactez_nous_edit_corner"
+				android:hint="@string/contactez_nous_email_message_hint"
+                android:inputType="textMultiLine"
+                android:padding="50dp"
+                android:layout_marginBottom="32dp"/>
+
+            <Button
+                android:id="@+id/contactez_nous_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_hopital_call_buttom"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:hint="@string/contactez_nous_button_text"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+</ScrollView>

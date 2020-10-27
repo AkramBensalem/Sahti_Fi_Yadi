@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "732468602725",
+    "firebase_url": "https://sahti-fi-yadi.firebaseio.com",
+    "project_id": "sahti-fi-yadi",
+    "storage_bucket": "sahti-fi-yadi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732468602725:android:6979cdd088b95785b7a38c",
+        "android_client_info": {
+          "package_name": "com.gadg.sahtifiyadi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732468602725-mhk93is8v7g49sl9dsa7n2ukrmh8atkr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gadg.sahtifiyadi",
+            "certificate_hash": "f22cb68c0e6fd497f13f1d285cf979c34d55ec02"
+          }
+        },
+        {
+          "client_id": "732468602725-ig23vrl2ak7lbji2u2m6te06t0qge9mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC02w0muR28PSiE_-FImhiE5QYiTMbTQcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732468602725-ig23vrl2ak7lbji2u2m6te06t0qge9mf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

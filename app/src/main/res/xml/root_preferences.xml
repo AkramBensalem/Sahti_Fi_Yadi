@@ -1,0 +1,60 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:title="@string/compte_sahti_fi_yedi"
+        app:iconSpaceReserved="false"
+        app:singleLineTitle="true">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_save_24"
+            app:defaultValue="true"
+            app:key="saveUser"
+            app:title="@string/sauvgarder"
+            app:summaryOff="@string/sauvgarder_off"
+            app:summaryOn="@string/sauvgarder_on"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+
+        app:iconSpaceReserved="false"
+        app:title="@string/gestion_globale"
+        app:singleLineTitle="true">
+        <ListPreference
+            android:defaultValue="@string/french"
+            app:iconSpaceReserved="true"
+            app:icon="@drawable/ic_baseline_translate_24"
+            app:defaultValue="@string/french"
+            app:entries="@array/langues_values"
+            app:entryValues="@array/langues_entries"
+            app:key="french"
+            app:title="@string/langue"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_gps_fixed_24"
+            app:defaultValue="true"
+            app:key="localisation"
+            app:summaryOff="@string/localisation_gps_autoriser"
+            app:summaryOn="@string/localisation_gps_non_autoriser"
+            app:title="@string/localisation" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_sync_blue_24"
+            app:defaultValue="true"
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_save_alt_24"
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_on"
+            app:summaryOn="@string/attachment_summary_off"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
